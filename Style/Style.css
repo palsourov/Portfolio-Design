@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open sans";
+}
+ .header{
+   background-image: url("../images/developer.png"),url("../images/header_bg.png");
+   background-repeat: no-repeat;
+   background-position: top  left, bottom right;
+} 
+.img img{
+    width: 60px;
+    height: 35rem;
+    position: absolute;
+    margin-left: 30px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 200px;
+    align-items: center;
+}
+.name h1{
+   font-size: 50px;
+}
+.name span{
+    color: #FD6E0A;
+}
+.nevBar ul {
+   display:flex;
+   align-items: center;
+}
+.nevBar ul li {
+    list-style: none;
+}
+.nevBar ul li a{
+    text-decoration: none;
+    margin: 50px;
+    color: #474747;
+    font-size: 20px;
+}
+.nevBar ul li a:hover{
+    color: #0e0d0d;
+    transition: 0.4s;
+}
+header button {
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:#FD6E0A ;
+    border: none;
+    font-size: 20px;
+}
+.nevBar .button a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.nevBar .button:hover{
+    background-color: #fc8128;
+    transition: 0.5s;   
+}
+
+/* Banner section */
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+.text_contain{
+
+    width: 35rem;
+    margin-left: 200px;
+    margin-top: 60px;
+    
+}
+.text_contain h3{
+    font-size: 45px;
+    color: #474747;
+    font-weight: bold;
+}
+.text_contain h1{
+    font-size: 85px;
+    color: #181818;
+    font-weight: bold;
+}
+.text_contain p{
+    margin-top: 13px;
+    font-size: 17px;
+    color: #757575;
+}
+.image img{ 
+    width: 580px;
+}
+.text_contain button{
+    margin: 20px;
+}
+
+
+
