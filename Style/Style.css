@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 body{
@@ -10,6 +10,7 @@ body{
    background-image: url("../images/developer.png"),url("../images/header_bg.png");
    background-repeat: no-repeat;
    background-position: top  left, bottom right;
+   background-color: #FFF8F3;
 } 
 .img img{
     width: 60px;
@@ -20,7 +21,7 @@ body{
 .navigation{
     display: flex;
     justify-content: space-between;
-    margin: 30px 200px;
+    margin: 10px 200px;
     align-items: center;
 }
 .name h1{
@@ -46,13 +47,23 @@ body{
     color: #0e0d0d;
     transition: 0.4s;
 }
-header button {
-    width: 140px;
+ .button {
+    width: 150px;
     height: 50px;
     border-radius: 10px;
     background-color:#FD6E0A ;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
+}
+header .contact {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:white;
+    font-size: 18px;
+    border: 2px solid #FD6E0A;
+    color: #FD6E0A;
 }
 .nevBar .button a{
     text-decoration: none;
@@ -72,8 +83,7 @@ header button {
 
     width: 35rem;
     margin-left: 200px;
-    margin-top: 60px;
-    
+    margin-top: 60px;   
 }
 .text_contain h3{
     font-size: 45px;
@@ -95,6 +105,135 @@ header button {
 }
 .text_contain button{
     margin: 20px;
+}
+  /* About section */
+.about {
+    margin-top: 130px;
+}
+.aboutContent{
+    margin: 0 230px;
+    background: #FFF8F3;
+}
+.text_Content{
+    text-align: center;
+    padding: 150px;
+    margin-top: 20px;   
+}
+.text_Content h3{
+    font-size: 35px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+ p{
+    color: #757575;
+}
+h4{
+    color: #757575;
+}
+
+ /* What_i_do section */
+.Do_content{
+    background: white;
+}
+.What_i_Do .subtitle{
+    text-align: left;  
+    width: 267px;
+    height: 377px;
+    box-shadow: 1px 1px 1px 1px #757575;
+    padding: 30px;
+    margin-left: 23px;
+    justify-content:space-around;
+
+}
+.What_i_Do .title{
+    width: 100%;
+    padding: 10px;
+    margin-top: -100px;
+}
+.What_i_Do .subtitle p{
+    font-size: 16px;
+    margin-top: 23px;  
+}
+.What_i_Do .items{
+    margin-top: 20px;
+}
+.Resume{
+    margin-top: 130px;
+}
+.Resume_contain{
+    display: flex;
+    margin: 114px 230px;   
+}
+.Resume h1{
+    text-align: center;
+}
+.Resume_contain .items{
+    margin-top: 30.5px;
+    padding: 27px; 
+}
+.Resume_contain .items p
+{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.Resume_contain h2
+{
+    margin-left: 30px;
+
+}
+.Resume_contain h4
+{
+    margin-top: 20px;
+    color:#757575;
+}
+.Resume_contain hr
+{
+    margin: 20px;
+}
+.Resume .btn  {
+    text-align: center;
+    margin-top: -60px;
+}
+
+/* footer section */
+
+footer{
+    margin-top: 130px;
+    padding: 130px 230px;
+    background: #FFF8F3;
+    display: flex;
+    gap: 100px;
+}
+.footer_column  {
+    width: 50%;
+}
+.form{
+    margin-top: 30px;
+}
+
+.footer input[type="text"],footer input[type="email"],footer textarea {
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    border: none;
+}
+.footer p {
+    margin-top: 20px;
+}
+.link{
+    margin-top: 20px;
 }
 
 
