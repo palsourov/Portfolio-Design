@@ -8,7 +8,7 @@ body{
    background-repeat: no-repeat;
    background-position: top  left, bottom right;
    background-color: #FFF8F3;
-} 
+ }
 .img img{
     width: 60px;
     height: 35rem;
@@ -79,8 +79,7 @@ header .contact {
 .text_contain{
 
     width: 35rem;
-    margin-left: 200px;
-    margin-top: 60px;   
+    margin-left: 200px  
 }
 .text_contain h3{
     font-size: 45px;
@@ -93,8 +92,8 @@ header .contact {
     font-weight: bold;
 }
 .text_contain p{
-    margin-top: 13px;
-    font-size: 17px;
+    /* margin-top: 13px; */
+    font-size:16px;
     color: #757575;
 }
 .image img{ 
