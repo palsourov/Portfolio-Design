@@ -120,8 +120,8 @@ body{
  .text_contain button{
      margin: 20px;
  }
-  /* About section */
-.title{
+/* about section */
+ .title{
     justify-content:space-around;
     align-items: center;
 } 
@@ -135,14 +135,7 @@ body{
     padding: 150px;
     margin-top: 20px;   
 } 
- p{
-    color: #757575;
-}
-h4{
-    color: #757575;
-}
-
- /*what i do section*/
+/*what i do section*/
 .What_i_Do{
     margin-top: 200px;
 }
@@ -163,53 +156,26 @@ h4{
     margin-top: 20px;
     font-size: 16px;
 }
-
-.What_i_Do .items{
-    margin-top: 20px;
-}
-  /* Resume section */
-.Resume{
-    margin-top: 130px;
-}
-.Resume_contain{
-    display: flex;
-    margin: 114px 230px;   
-}
-.Resume h1{
+ /*A summary of My Resume*/
+ .Resume_contain{
+    gap: 30px;
+    padding-left: 20px;
+    width: 90%;
+    margin-top: 100px;
+ }
+ .Resume h1{
     text-align: center;
-}
-.Resume_contain .items{
-    margin-top: 30.5px;
-    padding: 27px; 
-}
-.Resume_contain .items p
-{
-    font-size: 16px;
-    margin-top: 20px;
-}
-.Resume_contain h2
-{
-    margin-left: 30px
-}
-.Resume_contain h4
-{
-    margin-top: 20px;
-    color:#757575;
-}
-.Resume_contain hr
-{
-    margin: 20px;
-}
-.Resume .btn{
+    margin-top: 100px;
+ }
+ .btn{
     text-align: center;
-    margin-top: -60px;
-}
-/* footer section */
-footer{
+    margin-top: 100px;
+ }
+ /* footer section */
+ footer{
     margin-top: 130px;
     padding: 130px 230px;
     background: #FFF8F3;
-    display: flex;
     gap: 100px;
 }
 .footer_column  {
@@ -230,6 +196,114 @@ footer{
     font-size: 20px;
     border: none;
 }
+/* for small device */
+@media screen and (max-width:776px) {
+    .header,.Skill,.title,.Resume_contain ,.footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;      
+    }
+      .navigation {
+        flex-direction: column;
+         margin: 10px 20px;
+    } 
+    .nevBar ul{
+        flex-direction: column;
+    }
+    .name{
+        margin-left: 1.2rem;;
+    }
+   /* .nevBar ul {
+        flex-direction: column;
+     } */
+    .text_contain{
+        width:100%;
+        margin-left: 20px; 
+    }
+    .text_contain h3{
+        font-size: 25px;
+        color: #474747;
+        font-weight: bold;
+    }
+    .text_contain h1{
+        font-size:50px;
+        color: #181818;
+        font-weight: bold;
+    }
+    .text_contain p{
+        font-size:16px;
+        color: #757575;
+    }
+    .image img{ 
+        width:100%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding:10px;
+    }
+    .header{
+        background-image: none;
+    }
+    .Content{
+        padding: 10px;
+    }
+    .footer_column  {
+        width: 100%;
+        margin: 20px;
+    } 
+    .footer{
+        padding: 10px ;
+    }
+    main{
+        margin: 10px 20px; 
+    }
+}
+/* for mediam device */
+@media screen and (min-width:776px) and (max-width:976px) {
+ .Skill,.title,.Resume_contain,.footer,.banner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .navigation {
+         margin: 10px 30px;
+    } 
 
-
-
+    .Content{
+        padding: 20px;
+    }
+    .footer_column  {
+        width: 100%;
+        margin: 20px;
+    }
+    main{
+        margin: 10px 20px; 
+    }
+    .text_contain{
+        width:100%;
+        margin-left: 20px; 
+    }
+    .text_contain h3{
+        font-size: 35px;
+        color: #474747;
+        font-weight: bold;
+    }
+    .text_contain h1{
+        font-size:65px;
+        color: #181818;
+        font-weight: bold;
+    }
+    .text_contain p{
+        font-size:16px;
+        color: #757575;
+    }
+    .image img{ 
+        width:100%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        padding:10px;
+    }
+    .header{
+        background-image: none;
+    }
+}
