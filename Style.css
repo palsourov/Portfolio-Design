@@ -3,26 +3,37 @@
 body{
      font-family: "Open sans";
 }
-/*define*/
 .displayFlax{
     display: flex;
-    gap: 20px;
 }
-.button {
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    background-color:#FD6E0A ;
-    border: none;
-    font-size: 18px;
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+  }
+.margin{
+    margin: 10px 200px;
+}
+.secondary-bg {
+    background-color: #FFF8F3;
+  }
+.btn-primary{
+    padding: 18px 35px;
+    background-color: #FD6E0A;
+    font-weight: bold;
+    font-size: 20px;
     color: white;
+    border: none;
+    border-radius: 5px;
 }
-.main{
-   margin: 10px 200px;
+.btn{
+    margin-top: 50px;
 }
-
-/* define end*/
-/* header section */
+/*nav section*/
 .header{
     background-image: url("./images/developer.png"),url("./images/header_bg.png");
     background-repeat: no-repeat;
@@ -30,152 +41,95 @@ body{
     background-color: #FFF8F3;
     background-size: 99px , 686px;
   }
- .img img{
-     width: 60px;
-     height: 35rem;
-     position: absolute;
-     margin-left: 30px;
- }
- .navigation{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- .name h1{
-    font-size: 50px;
- }
- .name span{
-     color: #FD6E0A;
- }
- .nevBar ul {
-    display:flex;
+.NavSection{
+  justify-content: space-between;
+  align-items: center;
+}
+.bar{
     align-items: center;
- }
- .nevBar ul li {
-     list-style: none;
- }
- .nevBar ul li a{
-     text-decoration: none;
-     margin: 50px;
-     color: #474747;
-     font-size: 20px;
- }
- .nevBar ul li a:hover{
-     color: #0e0d0d;
-     transition: 0.4s;
- }
-  .button {
-     width: 150px;
-     height: 50px;
-     border-radius: 10px;
-     background-color:#FD6E0A ;
-     border: none;
-     font-size: 18px;
-     color: white;
- }
- header .contact {
-     width: 150px;
-     height: 50px;
-     border-radius: 10px;
-     background-color:white;
-     font-size: 18px;
-     border: 2px solid #FD6E0A;
-     color: #FD6E0A;
- }
- .nevBar .button a{
-     text-decoration: none;
-     font-weight: bold;
- }
- .nevBar .button:hover{
-     background-color: #fc8128;
-     transition: 0.5s;   
- }
- 
- /* Banner section */
- .banner{
-     display: flex;
-     justify-content: space-between;
- }
- .text_contain{
-     width: 35rem;
-     margin-left: 200px  
- }
- .text_contain h3{
-     font-size: 45px;
-     color: #474747;
-     font-weight: bold;
- }
- .text_contain h1{
-     font-size: 85px;
-     color: #181818;
-     font-weight: bold;
- }
- .text_contain p{
-     font-size:16px;
-     color: #757575;
- }
- .image img{ 
-     width: 580px;
- }
- .text_contain button{
-     margin: 20px;
- }
-/* about section */
- .title{
-    justify-content:space-around;
+}
+.logo h1{
+   font-size: 45px; 
+}
+span{
+    color:#FD6E0A;
+}
+.Navbar ul li{
+    margin: 30px;
+    font-size: 20px;
+}
+/* banner section */
+.image img{
+    width: 100%;
+}
+.banner{
     align-items: center;
-} 
+}
+.banner-title h3 {
+    font-size: 45px;
+    color: #474747;
+    font-weight: bold;
+}
+.banner-title h1{
+    font-weight: bold;
+    font-size: 85px;
+  }
+header .contact {
+    padding: 18px 35px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 18px;
+  border: 2px solid #FD6E0A;
+  color: #FD6E0A;
+  margin-left: 35px;
+}
+ /* about section */
 .about {
-    margin-top: 8rem;
     border-radius: 10px;
-    background: #FFF8F3;
-}
-.Content{
+    padding: 130px 150px;
     text-align: center;
-    padding: 150px;
-    margin-top: 20px;   
-} 
-/*what i do section*/
-.What_i_Do{
-    margin-top: 200px;
-}
-.text_Content{
-   text-align: center;
-}
-.subtitle{
-    text-align: left;  
-    width: 267px;
-    height: 377px;
-    box-shadow: 1px 2px 5px 1px #757575;
-    padding: 30px;
-    margin: 10px 1rem;
-    justify-content:space-around;
-    border-radius: 10px;
-}
-.item p , h4{
-    margin-top: 20px;
-    font-size: 16px;
-}
- /*A summary of My Resume*/
- .Resume_contain{
+    margin-top: 100px;
+  }
+  .section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+  }
+  .about-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  /* What i do section */
+  .skill{
     gap: 30px;
-    padding-left: 20px;
-    width: 90%;
+    margin-top: 30px;
+  }
+  .skills{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  }
+  .section-description {
+    font-size: 18px;
+    color: #757575;
+  }
+  .Resume{
     margin-top: 100px;
- }
- .Resume h1{
-    text-align: center;
-    margin-top: 100px;
- }
- .btn{
-    text-align: center;
-    margin-top: 100px;
- }
- /* footer section */
- footer{
+  }
+  .Resume_contain{
+    gap: 30px;
+  }
+  .experience-sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  /* footer section */
+  footer{
     margin-top: 130px;
     padding: 130px 230px;
     background: #FFF8F3;
+    display: flex;
     gap: 100px;
 }
 .footer_column  {
@@ -196,114 +150,66 @@ body{
     font-size: 20px;
     border: none;
 }
-/* for small device */
-@media screen and (max-width:776px) {
-    .header,.Skill,.title,.Resume_contain ,.footer{
+@media screen and (max-width:576px) {
+    .NavSection , .bar,.about-items,.skill,.Resume_contain,.footer{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;      
-    }
-      .navigation {
-        flex-direction: column;
-         margin: 10px 20px;
-    } 
-    .nevBar ul{
-        flex-direction: column;
-    }
-    .name{
-        margin-left: 1.2rem;;
-    }
-   /* .nevBar ul {
-        flex-direction: column;
-     } */
-    .text_contain{
-        width:100%;
-        margin-left: 20px; 
-    }
-    .text_contain h3{
-        font-size: 25px;
-        color: #474747;
-        font-weight: bold;
-    }
-    .text_contain h1{
-        font-size:50px;
-        color: #181818;
-        font-weight: bold;
-    }
-    .text_contain p{
-        font-size:16px;
-        color: #757575;
-    }
-    .image img{ 
-        width:100%;
-    }
-    .banner{
-        flex-direction: column-reverse;
-        padding:10px;
+        justify-content:center;
+        align-items:center;
     }
     .header{
         background-image: none;
     }
-    .Content{
-        padding: 10px;
+    .banner-title h3 {
+        font-size: 25px;
     }
-    .footer_column  {
+    .banner-title h1{
+        font-weight: bold;
+        font-size: 45px;
+      }
+    .about ,.What_i_Do,.Resume_contain,.footer{
         width: 100%;
-        margin: 20px;
-    } 
-    .footer{
-        padding: 10px ;
+        margin: auto;
+        margin-top:50px;
+        padding:0px 0px;
     }
-    main{
-        margin: 10px 20px; 
+    .banner{
+        flex-direction: column-reverse;
     }
+    .banner-title{
+        margin: 10px 10px;
+    }
+    .banner-title button{
+        margin-top: 10px;
+    }
+    
+      
 }
-/* for mediam device */
-@media screen and (min-width:776px) and (max-width:976px) {
- .Skill,.title,.Resume_contain,.footer,.banner{
+@media screen and (min-width:576px) and (max-width:976px) {
+     .about-items,.skill,.Resume_contain,.footer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-    .navigation {
-         margin: 10px 30px;
-    } 
-
-    .Content{
-        padding: 20px;
-    }
-    .footer_column  {
-        width: 100%;
-        margin: 20px;
-    }
-    main{
-        margin: 10px 20px; 
-    }
-    .text_contain{
-        width:100%;
-        margin-left: 20px; 
-    }
-    .text_contain h3{
-        font-size: 35px;
-        color: #474747;
-        font-weight: bold;
-    }
-    .text_contain h1{
-        font-size:65px;
-        color: #181818;
-        font-weight: bold;
-    }
-    .text_contain p{
-        font-size:16px;
-        color: #757575;
-    }
-    .image img{ 
-        width:100%;
-    }
-    .banner{
-        flex-direction: column-reverse;
-        padding:10px;
-    }
     .header{
         background-image: none;
+    }
+    .banner-title h3 {
+        font-size: 30px;
+    }
+    .banner-title h1{
+        font-weight: bold;
+        font-size: 65px;
+      }
+    .about ,.What_i_Do,.Resume_contain,.footer,.NavSection{
+        width: 100%;
+        margin: auto;
+        margin-top:50px;
+        padding:0px 0px;
+    }
+   
+    .banner-title{
+        margin: 10px 10px;
+    }
+    .banner-title button{
+        margin-top: 10px;
     }
 }
